@@ -10,6 +10,9 @@
     <name>Spring Boot Docker</name>
     <description>Getting started with Spring Boot and Docker</description>
 
+        <configuration>
+            <mainClass>java.hello.Application</mainClass> 
+        </configuration>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -18,6 +21,7 @@
     </parent>
 
     <properties>
+        <start-class>com.mycorp.starter.HelloWorldApplication</start-class>
         <docker.image.prefix>springio</docker.image.prefix>
         <java.version>1.8</java.version>
     </properties>
